@@ -3,7 +3,55 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Ml du Corte</title>
+    <link rel="shortcut icon" href="img/barber.png" type="icone barber">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+            *{
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+            }
+            :root{
+                --primary:#1a1a1a;
+                --seconday:#d4af37;
+                --accent:#8b0000;
+                --light:#333;
+            }
+        body{
+            font-family:'Roboto', sans-serif ;
+            background-color: var(--light); 
+            color: var(--primary);
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
+        h1,h2,h3,h4{
+          font-family: 'Oswald', sans-serif;
+          text-transform: uppercase;
+          letter-spacing: 1px;
+        }
+        .container{
+            width: 90%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        .btn{
+            display: inline-block;
+            background: var(--seconday) ;
+            color: var(--primary) ;
+            padding: 12px 25px;
+            text-decoration: none;
+            font-weight: bold;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            border-radius: 10px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+        
+    </style>
 </head>
 <body>
     <!--header-->
@@ -35,8 +83,8 @@
     <div class="container hero-container">
         <h2>Estilo, tradição e mordenidade</h2>
         <p>Na Ml du Corte, combinamos tradição e modernidade para oferecer a melhor experiencia em cuidado masculinos</p>
-    </div>
     <a href="#contact" class="btn ">Agendar Horário</a>
+    </div>
     </section>
 
     <!--Sobre-->
@@ -153,76 +201,96 @@
         
     </section>
     
-    <!--Contato-->
-    
-    <section class="Contact" id="Contact">
+    <!-- Contato -->
+    <section class="contact" id="contact">
         <div class="container">
-            <div class="Contact-container">
-                <div class="container-info">
-                    <h3>Entre, em contato</h3>
+            <div class="contact-container">
+                <div class="contact-info">
+                    <h3>Entre em Contato</h3>
                     <div class="contact-item">
                         <div class="contact-icon">
                             <i class="fas fa-map-marker-alt"></i>
                         </div>
                         <div class="contact-text">
                             <h4>Endereço</h4>
-                            <p>Avenida Atlântica, 1000<br>Rio de Janeiro Rj.</p>
+                            <p>Av. Paulista, 1000<br>São Paulo, SP</p>
                         </div>
                     </div>
                     <div class="contact-item">
                         <div class="contact-icon">
-                        <i class="fas fa-phone"></i>
+                            <i class="fas fa-phone"></i>
                         </div>
                         <div class="contact-text">
                             <h4>Telefone</h4>
-                            <p>(21+) 9998-8888</p>
-                        </div>
-                        <div class="contact-text">
-                            <div class="contact-icon">
-                                <i class="fas fa-envelope"></i>
-                            </div>
-                            <div class="contact-text">
-                                <h4>Email</h4>
-                                <p>contato@mlducorte.com</p>
-                            </div>
-                        </div>
-                        <div class="contact-item">
-                            <div class="contact-icon">
-                                <i class="fas fa-clock"></i>
-                            </div>
-                            <div class="contact-text">
-                                <h4>Horário de Funcionamente</h4>
-                                <p>Segunda a Sexta das 09h as 19h</p>
-                            </div>
-                        </div>
-                        </div>
-                        <div class="contact-form">
-                            <h3>Agente um Horário</h3>
-                            <form method="post">
-                                <div class="form-group">
-                                    <input type="text" name="name" placeholder="SEU NOME" >
-                                </div>
-                                <div class="form-group">
-                                    <input type="email" name="email" placeholder="SEU EMAIL">
-                                    <DIV class="form-group">
-                                     <input type="tel" name="Telefone" placeholder="SEU TELEFONE">
-                                    </DIV>
-                                    <div class="form-group" >
-                                        <input type="text" placeholder="SERVIÇO DESEJADO">
-                                    </div>
-                                    <DIV class="form-group">
-                                        <textarea placeholder="ENVIE UMA MENSAGEM" maxlength="10"></textarea>
-                                    </DIV>
-                                    <button type="submit" class="btn">Enviar</button>
-                                </div>
-                            </form>
+                            <p>(11) 9999-8888</p>
                         </div>
                     </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="contact-text">
+                            <h4>Email</h4>
+                            <p>contato@classicbarber.com.br</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-clock"></i>
+                        </div>
+                        <div class="contact-text">
+                            <h4>Horário de Funcionamento</h4>
+                            <p>Seg-Sex: 9:00 - 19:00<br>Sáb: 9:00 - 17:00<br>Dom: Fechado</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-form">
+                    <h3>Agende um Horário</h3>
+                    <form>
+                        <div class="form-group">
+                            <input type="text" placeholder="Seu Nome" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" placeholder="Seu Email" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="tel" placeholder="Seu Telefone" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" placeholder="Serviço Desejado" required>
+                        </div>
+                        <div class="form-group">
+                            <textarea placeholder="Mensagem"></textarea>
+                        </div>
+                        <button type="submit" class="btn">Enviar Agendamento</button>
+                    </form>
                 </div>
             </div>
         </div>
 
     </section>
+
+    <!--Footer-->
+    <footer >
+        <div class="container">
+            <div class="footer-cotent">
+                <div class="logo">
+                    <i class="fas fa-cut"></i>
+                    <h1>Ml du Corte <span>Barbearia</span></h1>
+                </div>
+                <div class="social-links">
+                    <a href="https://www.facebook.com/share/1EszAugSMM/"><i class="fab fa-facebook-f"></i>facebook</a>
+                    <a href="https://www.instagram.com/o_mldocorte?igsh=MWt0cjJydG5uM2c1OA=="><i class="fab fa-instagram"></i>instagram</a>
+                    <a href="#"><i class="fab fa-twitter"></i>X</a>
+                    <a href="https://wa.me/+55"><i class="fab fa-whatsapp"></i>Whatsapp</a>
+                </div>
+            </div>
+            <div class="copyright">
+                &copy;2025 ML du Corte. Todos os direitos reservados.
+            </div>
+        </div>
+    </footer>
+
 
 </body>
 
